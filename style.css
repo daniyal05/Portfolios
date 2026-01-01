@@ -23,6 +23,20 @@ body{
   color: var(--text-color);
 }
 
+/* ⩢ псевдоэлемент CSS, который позволяет стилизовать прокрутку*/
+::-webkit-scrollbar{
+  width: 1rem;
+}
+/* ⩢ псевдоэлемент CSS, который позволяет стилизовать ползунок (движущуюся часть) полосы прокрутки в браузерах на движке WebKit*/
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+/* ⩢ псевдоэлемент CSS, который позволяет стилизовать фон прокрутки*/
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+
 .header {
   position: sticky;
   width: 100%;
@@ -43,7 +57,7 @@ body{
   display: none;
 }
 
-.logo{
+.header__logo{
   font-size: 3rem;
   color: var(--text-color);
   font-weight: 800;
@@ -52,11 +66,11 @@ body{
 
 }
 
-.logo:hover{
+.header__logo:hover{
   transform: scale(1.1);
 }
 
-span{
+.gradient{
   background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%);
   background-clip: text;
   color:transparent;
@@ -124,39 +138,39 @@ section{
   gap: 15rem;
 
 }
-.home-content {
+.home__inner {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
 }
-.home-content h1{
+.home__inner-title{
   font-size: 8rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
 }
-.home-content h3 {
+.home__inner-subtitle {
   margin: 1rem 0;
   font-size: 4rem;
 }
-.home-content p{
+.home__inner-text{
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
 }
-.home-img img {
+.home__image-img {
   width: 32vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
 }
 
-.home-img img:hover{
+.home__image-img:hover{
   box-shadow: 0 0 100px var(--main-color);
 }
 
-.home-icon a{
+.home__inner-icons a{
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +183,7 @@ section{
   margin: 3rem 0.5rem;
   transition: 0.3s ease-in-out;
 }
-.home-icon a:hover{
+.home__inner-icons a:hover{
   color:var(--text-color);
   background-color: var(--main-color);
   transform:scale(1.2)translateY(-5px);
@@ -190,6 +204,7 @@ section{
   border: 2px solid transparent;
   font-weight: 600;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 .btn:hover{
   transform: scale(1.1);
@@ -208,4 +223,44 @@ section{
   box-shadow: 0 0 25px var(--main-color);
   transform: scale(1.1);
   color: black;
+}
+
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background: var(--second-bg-color) ;
+}
+
+.about_img-content{
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.5s ease-in-out;
+}
+.about_img-content:hover{
+  box-shadow: 0 0 100px var(--main-color);
+}
+
+.about_text-title{
+  font-size: 7rem;
+  text-align: left;
+}
+
+.about_text-subtitle{
+  font-size: 2rem;
+}
+
+.about_text-btn{
+  margin: 3rem 0;
+}
+
+
+
+
+.Read{
+  display: none;
 }

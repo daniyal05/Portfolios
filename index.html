@@ -12,8 +12,8 @@
   </head>
   <body>
   <header class="header">
-    <a href="#home" class="logo">
-      Daniyal <span>Kurbanov</span>
+    <a href="#home" class="header__logo">
+      Daniyal <span class="header__logo-text gradient">Kurbanov</span>
     </a>
 
     <i class="bx bx-menu" id="menu-icon"></i>
@@ -25,16 +25,16 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class=""><button class="gradient-btn">Contact me</button></div>
+    <button class="gradient-btn header-button">Contact me</button>
   </header>
   <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hi, It's <span>Daniyal</span></h1>
-      <h3>
-        I'm a <span class="spas"> </span>
+    <div class="home__inner">
+      <h1 class="home__inner-title">Hi, It's <span class="gradient home__inner-span">Daniyal</span></h1>
+      <h3 class="home__inner-subtitle">
+        I'm a <span class="spas gradient"> </span>
       </h3>
-      <p> I've been crafting websites for one year now, turning clients’ ideas into beautiful, user-friendly digital experiences.</p>
-      <div class="home-icon">
+      <p class="home__inner-text"> I've been crafting websites for one year now, turning clients’ ideas into beautiful, user-friendly digital experiences.</p>
+      <div class="home__inner-icons">
         <a href="#">
           <i class="bx bxl-github"></i>
         </a>
@@ -53,9 +53,26 @@
         <a href="#contact" class="btn">Contact</a>
       </div>
     </div>
-    <div class="home-img">
-      <img src="image.jpg">
+    <div class="home__image">
+      <img class="home__image-img" src="image.jpg">
 
+    </div>
+  </section>
+  <section class="about">
+    <div class="about_img">
+      <img src="image.jpg" loading="lazy" class="about_img-content">
+    </div>
+    <div class="about_text">
+      <h2 class="about_text-title">About <span class="gradient">Me</span></h2>
+      <p class="about_text-subtitle">Hey there! I'm Daniyal, a freelance front-end developer specializing in website design and layout.
+        I've been crafting websites for over one year now, turning clients’ ideas into beautiful, user-friendly digital experiences.
+        I love the freedom of being my own boss, but I also understand that staying competitive means constantly learning new skills.
+      <span id="Read" class="Read">Right now, I'm diving deep into modern tools like React.js and Vue.js to create even more dynamic and responsive solutions.
+        Balancing projects with self-improvement can be tough sometimes, especially when work gets busy.
+        But it's all worth it when you see your creations come alive online.
+        If you're looking for someone who cares about quality and delivering great results, let's connect! I'll be happy to discuss any project opportunities.</span>
+      </p>
+      <button onclick="Read_more()" class="btn about_text-btn">Read More</button>
     </div>
   </section>
 
